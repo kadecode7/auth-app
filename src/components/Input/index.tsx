@@ -3,7 +3,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import { TextField } from '@mui/material';
-import { Percentage } from '../../types';
+import { LengthUnits } from '@src/types';
 
 export type Props = {
   helperText?: JSX.Element | string;
@@ -13,7 +13,7 @@ export type Props = {
   handleChange: React.ChangeEventHandler<HTMLInputElement>;
   value: string;
   ariaLabel: string;
-  width?: Percentage | number | 'fit-content' | 'auto';
+  width?: LengthUnits | 'fit-content' | 'auto';
 };
 
 export const Input = ({

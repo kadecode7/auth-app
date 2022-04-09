@@ -1,33 +1,66 @@
 import { Checkbox as MuiCheckbox, FormControlLabel } from '@mui/material';
 import React from 'react';
-import { Percentage } from '@src/types';
+import { LengthUnits } from '@src/types';
 
 export type Props = {
-  ariaLabel: string;
+  /**
+   * checkbox current state
+   */
   checked: boolean;
+  /**
+   * Manage checkbox state (checked/unchecked)
+   */
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  /**
+   * a string value that labels an interactive element
+   */
+  ariaLabel: string;
+  /**
+   * checkbox label
+   */
+  label?: JSX.Element | string;
+  /**
+   * checkbox label position
+   */
   labelPlacement?: 'bottom' | 'top' | 'start' | 'end';
+  /**
+   * checked checkbox by default
+   */
   defaultChecked?: boolean;
+  /**
+   * define if checkbox is require or not
+   */
   required?: boolean;
+  /**
+   * custom size for checkbox
+   */
+  fontSize?: LengthUnits;
+  /**
+   * material ui checkbox size
+   */
   size?: 'small' | 'medium';
-  fontSize?: Percentage | number | string;
+  /**
+   * checkbox color when checked or unchecked
+   */
   colors?: {
     uncheckedColor: string;
     checkedColor: string;
   };
-  label?: JSX.Element | string;
+  /**
+   * checkbox icons when checked or unchecked
+   */
   icons?: {
     icon: JSX.Element;
     checkedIcon: JSX.Element;
   };
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export const Checkbox = ({
-  fontSize, // ok
-  colors, // ok
-  label, // ok
-  ariaLabel, // ok
-  icons, // ok
+  fontSize,
+  colors,
+  label,
+  ariaLabel,
+  icons,
   labelPlacement = 'end',
   handleChange,
   ...props

@@ -1,1 +1,1 @@
-export type Percentage = `${number}%`;
+export type LengthUnits = number | `${number}rem` | `${number}%`;

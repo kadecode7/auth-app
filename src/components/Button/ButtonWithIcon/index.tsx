@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button } from '@mui/material';
 
-import { Percentage } from '@src/types';
+import { LengthUnits } from '@src/types';
 
 export type Props = {
   children: JSX.Element | string;
   backgroundColor: string;
-  width?: Percentage | number | 'fit-content' | 'auto';
+  width?: LengthUnits | 'fit-content' | 'auto';
   iconPosition: 'left' | 'right';
 };
 
