@@ -6,7 +6,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import { LengthUnits } from '../../types';
 
 export default {
-  title: 'Checkbox/checkbox',
+  title: 'Forms/Checkbox',
   component: Checkbox,
   args: {
     checked: false,
@@ -55,5 +55,5 @@ CheckboxWithIcon.args = {
 export const LargeCheckbox = Template.bind({});
 LargeCheckbox.args = {
   ariaLabel: 'icon-checkbox',
-  fontSize: '5rem' as LengthUnits,
+  fontSize: '5rem' as LengthUnits, //! Bad practice. Have to remove 'as LengthUnits' because fontSize is supposed to be of type LengthUnits in Props
 } as Props;

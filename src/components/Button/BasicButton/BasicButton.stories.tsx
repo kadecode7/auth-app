@@ -18,8 +18,8 @@ export default {
 
 const Template: Story<Props> = (args) => <Button {...args}>Login now</Button>;
 
-export const Basic = Template.bind({});
-Basic.args = {};
+export const Default = Template.bind({});
+Default.args = {};
 
 export const Width = Template.bind({});
 Width.args = {

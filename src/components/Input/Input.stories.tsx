@@ -9,7 +9,7 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Input, Props } from './index';
 
 export default {
-  title: 'InputField/Input',
+  title: 'Forms/Text Input',
   component: Input,
 } as Meta<typeof Input>;
 
@@ -75,8 +75,8 @@ EndAndStartAdornment.args = {
   ),
 } as Props;
 
-export const BasicInput = Template.bind({});
-BasicInput.args = {
+export const Default = Template.bind({});
+Default.args = {
   inputType: 'text',
   ariaLabel: 'text',
   value: 'hello world',
@@ -92,8 +92,8 @@ LargeInput.args = {
   handleChange: () => {},
 } as Props;
 
-export const BasicInputWithHelperText = Template.bind({});
-BasicInputWithHelperText.args = {
+export const HelperText = Template.bind({});
+HelperText.args = {
   helperText: 'Helper Text',
   inputType: 'text',
   ariaLabel: 'text',
